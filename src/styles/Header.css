@@ -1,0 +1,26 @@
+.navbar{
+    background-color:#333 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(228, 228, 228);
+}
+.navbar-light .navbar-brand{
+    color: rgb(228, 228, 228);
+    font-size: 22px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+.navbar-light .navbar-brand:hover{
+    color: white;
+    font-size: 22px;
+}
+
+.nav__brand{
+    padding-right: 30px;
+}
