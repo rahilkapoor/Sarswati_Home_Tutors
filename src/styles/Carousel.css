@@ -1,0 +1,14 @@
+.jumbotron{
+    background-color: transparent;
+    padding: 0;
+    margin-top: 55px;
+}
+
+.carousel__item{
+    height: 100%;
+}
+
+.carousel__image{
+    width: 100%;
+    object-fit: contain;
+}
