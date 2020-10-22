@@ -40,3 +40,8 @@
 .card__section {
 	margin-top: 60px;
 }
+
+.demo__heading,
+.accordion__section {
+	margin-top: 50px;
+}

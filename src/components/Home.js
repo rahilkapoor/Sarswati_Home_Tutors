@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Card from "../components/Card";
+import Accordion from "../components/Accordion";
 
 function Home() {
 	const classes = useStyles();
@@ -72,6 +73,41 @@ function Home() {
 						/>
 					</Grid>
 				</Grid>
+			</div>
+			<h1 className="demo__heading">Watch Our Demo Class</h1>
+			<div className={classes.root}>
+				<Grid container spacing={5}>
+					<Grid item xs={12} sm={6}>
+						<p className="para">
+							<iframe
+								title="Introduction"
+								width="100%"
+								height="350"
+								src="https://www.youtube.com/embed/5hHxyVBInkQ"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowFullScreen
+							></iframe>
+						</p>
+					</Grid>
+					<Grid item xs={12} sm={6}>
+						<p className="para">
+							<iframe
+								title="Demo Class"
+								width="100%"
+								height="350"
+								src="https://www.youtube.com/embed/t9QEON8Pwbs"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowFullScreen
+							></iframe>
+						</p>
+					</Grid>
+				</Grid>
+			</div>
+			<h1 className="demo__heading">Questions ?</h1>
+			<div className="accordion__section">
+				<Accordion />
 			</div>
 		</div>
 	);

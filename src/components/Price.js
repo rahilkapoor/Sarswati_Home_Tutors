@@ -28,12 +28,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 	heroContent: {
 		padding: theme.spacing(8, 0, 6),
+		marginTop: 40,
 	},
 	cardHeader: {
 		backgroundColor:
 			theme.palette.type === "light"
-				? theme.palette.grey[200]
-				: theme.palette.grey[700],
+				? "#e449ff"
+				: theme.palette.grey[200],
 	},
 	cardPricing: {
 		display: "flex",
@@ -153,7 +154,7 @@ export default function Pricing() {
 									<Button
 										fullWidth
 										variant={tier.buttonVariant}
-										color="primary"
+										color="secondary"
 									>
 										{tier.buttonText}
 									</Button>

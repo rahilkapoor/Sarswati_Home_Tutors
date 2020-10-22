@@ -42,10 +42,12 @@ const useStyles = makeStyles((theme) => ({
 const footers = [
 	{
 		title: "Saraswati Home Tutors",
+		route: "/",
 		description: ["Team", "History", "Contact us", "Locations"],
 	},
 	{
 		title: "Features",
+		route: "/pricing",
 		description: [
 			"Cool stuff",
 			"Random feature",
@@ -56,6 +58,7 @@ const footers = [
 	},
 	{
 		title: "Resources",
+		route: "/services",
 		description: [
 			"Resource",
 			"Resource name",
@@ -93,7 +96,7 @@ function Footer() {
 								{footer.description.map((item) => (
 									<li key={item}>
 										<Link
-											href="#"
+											href={footer.route}
 											variant="subtitle1"
 											color="textSecondary"
 										>
